@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moment 37</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  /* the arcade picture is 4:3: as large as fits the window */
+  #game {
+    position: absolute; inset: 0; margin: auto;
+    width: min(100vw, calc(100vh * 4 / 3)); height: min(100vh, calc(100vw * 3 / 4));
+  }
+</style>
+</head>
+<body>
+<div id="game"></div>
+<script>
+  // Personal quick-start: boots the pre-patched sfiii3.zip next to this page
+  // (built by tools/build_practice.py). Keys: arrows, S A Q punches, X Z E kicks.
+  window.EJS_player = "#game";
+  window.EJS_core = "arcade";
+  window.EJS_gameName = "Moment 37";
+  window.EJS_gameUrl = "sfiii3.zip";
+  window.EJS_pathtodata = "https://cdn.emulatorjs.org/4.2.3/data/";
+  window.EJS_color = "#8a5cf6";
+  window.EJS_startOnLoaded = true;
+</script>
+<script src="https://cdn.emulatorjs.org/4.2.3/data/loader.js"></script>
+</body>
+</html>
